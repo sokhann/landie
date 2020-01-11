@@ -1,0 +1,25 @@
+.container
+    max-width: 1200px
+    height: 100%
+    width: 100%
+    padding: $gutter/2 
+    margin: 0 auto
+
+.grid
+    display: grid
+    grid-template-columns: repeat(12, 1fr)
+    grid-gap: $gutter
+    
+// .example-grid
+//     display: grid
+//     grid-gap: $gutter
+//     grid-template-columns: 1fr 1fr
+//     grid-template-areas: "left right"
+//     > div:first-child
+//         grid-area: left
+//     > div:last-child
+//         grid-area: right
+//         +media-breakpoint-down(xs)
+//         display: block
+//         > div
+//             padding: $gutter/2 0

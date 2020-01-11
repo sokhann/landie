@@ -1,0 +1,8 @@
+mixin link(href, name, className)
+    a(href=href, class=className)&attributes(attributes)= name
+
+mixin navList(listClass, itemClass, linkClass, items)
+    ul(class=listClass)
+        for i in items
+            li(class=itemClass)    
+                +link(i.href, i.label, linkClass)

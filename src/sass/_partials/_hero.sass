@@ -1,0 +1,18 @@
+.section.hero
+    display: flex
+    flex-direction: column
+    min-height: 100vh
+    padding-top: 0
+    background-image: url(../img/main-draw.svg)
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: 0 0
+    .container
+        margin: auto
+    .section__block
+        grid-column: 6 / 13
+        .btn-block
+            margin-top: $gutter
+            .btn
+                &:not(:last-child)
+                    margin-right: 1rem

@@ -1,0 +1,54 @@
+* 
+    box-sizing: border-box
+
+html
+    min-height: 100%
+
+html, body
+    font-size: 16px
+    width: 100%
+    line-height: 1.6
+    font-family: 'RobotoRegular', sans-serif
+    font-weight: normal
+    overflow-x: hidden
+    color: $text-color
+
+body
+    position: relative
+    height: 100%
+    min-height: 100vh
+
+main
+    min-height: inherit
+
+h1,h2,h3,h4,h5,h6 
+    font-family: 'RobotoBold'
+    font-weight: normal
+
+a 
+    &:hover
+        text-decoration: none
+
+img
+    display: block
+    width: 100%
+    height: auto
+
+input 
+    padding: 8px
+    border-radius: 4px
+    border: 1px solid $light-text-color
+
+ul
+    padding: 0
+    margin: 0
+    li
+        list-style-type: none
+
+.logo 
+    text-align: center
+    font-family: 'RobotoBlack'
+    font-size: 26px
+    color: #37447E
+    &:hover
+        color: lighten(#37447E, 10%)

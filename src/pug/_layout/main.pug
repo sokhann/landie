@@ -1,0 +1,27 @@
+block pageVars
+
+include ../_common/_mixins
+include ../_common/_vars
+
+doctype html
+html
+    head
+        title= pageTitle
+        meta(charset="utf-8")
+        meta(http-equiv="x-ua-compatible" content="ie=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1")
+        meta(name="description" content= pageDescription)
+        meta(name="keywords" content= pageKeywords)
+        block head_end
+        link(rel="stylesheet" href="/styles/styles.min.css")
+    body
+        <!--[if lte IE 9]>
+        p(class="browserupgrade").
+            You are using an #[strong outdated] browser. 
+            Please #[a(href="https://browsehappy.com") upgrade your browser] 
+            to improve your experience and security.
+        <![endif]-->
+
+        block content
+
+        block body_end

@@ -2,10 +2,12 @@
     padding: 50px 0
 
 .section__block
+    grid-column: 1 / 7
     &_fullwidth
         grid-column: 1 / 13
         text-align: center
-
+.section__image
+    grid-column: 7 / 13
 .section__title
     color: $title-color
     font-family: 'RobotoMedium'
@@ -44,6 +46,18 @@
 
 
 .section.features
+    background-image: url(../img/Path.svg)
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: 100% 0
+
+.section.promo
+    background-image: url(../img/Path.svg)
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: 0 0
+
+.section.team
     background-image: url(../img/Path.svg)
     background-repeat: no-repeat
     background-size: contain

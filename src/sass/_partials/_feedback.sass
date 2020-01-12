@@ -1,14 +1,19 @@
 .section.feedback
-    padding-top: 0
+    background-color: $primary-color
     .grid
         align-items: center
+    .section__title
+        color: #ffffff
+    .section__text
+        color: #ffffff
+        opacity: 0.8
     .section__block
         grid-column: 1 / 7
     .section__image
         grid-column: 7 / 13
     .form
         display: flex
-        margin-top: $gutter
+        margin-top: $gutter * 1.5
         input 
             margin-right: $gutter / 2
             flex-basis: 60%

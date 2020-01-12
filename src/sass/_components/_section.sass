@@ -1,6 +1,11 @@
 .section 
     padding: 50px 0
 
+.section__block
+    &_fullwidth
+        grid-column: 1 / 13
+        text-align: center
+
 .section__title
     color: $title-color
     font-family: 'RobotoMedium'
@@ -14,3 +19,32 @@
 .section__text
     color: $secondary-color
     font-size: 18px
+
+
+.section__list
+    display: flex
+    &_fullwidth
+        grid-column: 1 / 13
+
+.section__item
+    img.section__icon
+        width: 48px
+    h6
+        font-size: 16px
+        margin: 10px 0 5px
+    p
+        font-size: 15px
+        color: $light-text-color
+        margin-bottom: 0
+        line-height: 1.5
+    .btn 
+        margin-top: $gutter / 2
+    &:not(:last-child) 
+        margin-right: 2rem
+
+
+.section.features
+    background-image: url(../img/Path.svg)
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: 100% 0

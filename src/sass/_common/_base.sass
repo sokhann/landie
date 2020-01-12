@@ -25,6 +25,15 @@ h1,h2,h3,h4,h5,h6
     font-family: 'RobotoBold'
     font-weight: normal
 
+h6
+    font-size: 16px
+
+p
+    font-family: 'RobotoLight'
+
+strong
+    font-family: 'RobotoBold'
+    font-weight: normal
 a 
     &:hover
         text-decoration: none
@@ -45,6 +54,13 @@ ul
     li
         list-style-type: none
 
+hr
+    border: none
+    margin: 1rem 0
+    background: #dddddd
+    height: 1px
+    margin: $gutter / 2 0
+
 .logo 
     text-align: center
     font-family: 'RobotoBlack'
@@ -52,3 +68,11 @@ ul
     color: #37447E
     &:hover
         color: lighten(#37447E, 10%)
+
+.avatar
+    width: 80px
+    height: 80px
+    border-radius: 50%
+    overflow: hidden
+    img
+        object-fit: cover

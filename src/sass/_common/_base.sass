@@ -20,10 +20,15 @@ body
 
 main
     min-height: inherit
+    display: flex
+    flex-direction: column
+    &>div,&>section
+        flex: 1
 
 h1,h2,h3,h4,h5,h6 
     font-family: 'RobotoBold'
     font-weight: normal
+    text-transform: capitalize
 
 h6
     font-size: 16px
@@ -43,7 +48,7 @@ img
     width: 100%
     height: auto
 
-input 
+input, textarea
     padding: 8px
     border-radius: 4px
     border: 1px solid $light-text-color
@@ -60,6 +65,12 @@ hr
     background: #dddddd
     height: 1px
     margin: $gutter / 2 0
+
+.link 
+    color: $secondary-color
+    font-family: 'RobotoBold'
+    &:hover
+        color: lighten($secondary-color, 10%)
 
 .logo 
     text-align: center

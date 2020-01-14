@@ -1,0 +1,17 @@
+extends _layout/main
+
+block head_end
+
+block pageVars
+    - var pageTitle = 'Landie - Contacts'
+    - var pageDescription = 'Landing Design Kit'
+    - var pageKeywords = 'landing page demo layout template'
+
+block content 
+    main
+        include _components/header
+        include _partials/contact
+        include _components/footer
+
+block body_end
+    script(type="text/javascript" src="/scripts/scripts.min.js")

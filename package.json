@@ -9,7 +9,6 @@
 	"author": "sokhann",
 	"license": "ISC",
 	"devDependencies": {
-		"bootstrap": "^4.4.1",
 		"browser-sync": "^2.26.7",
 		"del": "^5.1.0",
 		"gulp": "^4.0.2",
@@ -23,7 +22,9 @@
 		"gulp-rsync": "0.0.8",
 		"gulp-sass": "^4.0.2",
 		"gulp-uglify-es": "^2.0.0",
-		"normalize.css": "^8.0.1",
 		"run-sequence": "^2.2.1"
+	},
+	"dependencies": {
+		"normalize.scss": "^0.1.0"
 	}
 }

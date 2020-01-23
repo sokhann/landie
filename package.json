@@ -25,6 +25,7 @@
 		"run-sequence": "^2.2.1"
 	},
 	"dependencies": {
+		"node-sass": "^4.13.1",
 		"normalize.scss": "^0.1.0"
 	}
 }

@@ -7,8 +7,24 @@
     font-family: 'RobotoMedium'
     border-radius: 4px
     letter-spacing: 1px
+    position: relative
+    overflow: hidden
+    &::before
+        position: absolute
+        top: 50%
+        left: 50%
+        z-index: 2
+        display: block
+        content: ''
+        width: 0
+        height: 0
+        background: rgba(0,0,0,.2)
+        border-radius: 100%
+        transform: translate(-50%, -50%)
+        opacity: 0
     &:hover
-        opacity: 0.9
+        &::before
+            animation: circle .75s
     &.btn_accent
         background-color: $accent-color
         color: $primary-color
